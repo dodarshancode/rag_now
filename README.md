@@ -1,6 +1,6 @@
-# OpenSCENARIO 2.0 RAG System
+# RAG System
 
-A production-ready offline RAG (Retrieval-Augmented Generation) system for generating valid OpenSCENARIO 2.0 DSL code from natural language descriptions. Built for high-performance deployment on 8x A100 GPUs with complete offline operation.
+A production-ready offline RAG (Retrieval-Augmented Generation) system for generating valid DSL code from natural language descriptions. Built for high-performance deployment on 8x A100 GPUs with complete offline operation.
 
 ## 🚀 Features
 
