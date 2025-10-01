@@ -2,7 +2,7 @@
 
 A production-ready offline RAG (Retrieval-Augmented Generation) system for generating valid DSL code from natural language descriptions. Built for high-performance deployment on 8x A100 GPUs with complete offline operation.
 
-## 🚀 Features
+## Features
 
 - **Complete Offline Operation**: No external API calls, all models and data stored locally
 - **8x A100 GPU Optimization**: Multi-GPU model sharding, FP16/8-bit quantization, GPU-accelerated FAISS
@@ -13,7 +13,7 @@ A production-ready offline RAG (Retrieval-Augmented Generation) system for gener
 - **Modern Web UI**: Responsive interface with real-time monitoring and metrics
 - **Prometheus Monitoring**: Production-grade metrics and health checks
 
-## 📋 System Requirements
+## System Requirements
 
 ### Hardware
 - **GPU**: 8x NVIDIA A100 80GB (minimum 4x A100 40GB)
@@ -26,7 +26,7 @@ A production-ready offline RAG (Retrieval-Augmented Generation) system for gener
 - **Python**: 3.10 (optimal for CUDA 12.1 compatibility)
 - **Conda**: Miniconda or Anaconda
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Clone Repository
 ```bash
@@ -97,7 +97,7 @@ openscenario-rag-system/
 └── README.md                        # This file
 ```
 
-## 📊 Data Setup
+## Data Setup
 
 ### 1. Create Data Directories
 ```bash
@@ -164,7 +164,7 @@ mkdir -p data/examples/{cut-in,lane-change,overtaking,parking,intersection}
 ]
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Update Configuration File
 Edit `config/openscenario_config.yaml`:
@@ -205,7 +205,7 @@ sudo systemctl enable redis-server
 redis-cli ping  # Should return PONG
 ```
 
-## 🚀 Running the System
+## Running the System
 
 ### 1. Start the System
 ```bash
@@ -233,7 +233,7 @@ http://localhost:5000
 3. Click "Generate OpenSCENARIO Code"
 4. Review the generated code and validation results
 
-## 📝 Example Usage
+## Example Usage
 
 ### Natural Language Inputs
 ```
@@ -256,7 +256,7 @@ The system will produce valid OpenSCENARIO 2.0 DSL code with:
 - Automatic validation with py-osc2 parser
 - Error correction and retry if needed
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Core Endpoints
 - `GET /` - Web interface
@@ -290,7 +290,7 @@ curl -X POST http://localhost:5000/api/validate \
   }'
 ```
 
-## 🔍 Monitoring & Debugging
+## Monitoring & Debugging
 
 ### 1. Check System Status
 ```bash
@@ -327,7 +327,7 @@ Key metrics:
 - `openscenario_generation_duration_seconds` - Code generation time
 - `openscenario_validation_success_total` - Successful validations
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -373,7 +373,7 @@ export LOG_LEVEL=INFO
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 ```
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### 1. GPU Memory Optimization
 - Use 8-bit quantization for models
@@ -390,7 +390,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 - Switch to WizardCoder-15B for alternative results
 - Consider model ensemble for critical applications
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### 1. Data Encryption
 - All cached data is encrypted using Fernet
@@ -406,14 +406,14 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 - Validate all inputs before processing
 - Monitor system access and usage
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [OpenSCENARIO 2.0 Specification](https://www.asam.net/standards/detail/openscenario/)
 - [py-osc2 Parser Documentation](https://github.com/asam-ev/py-osc2)
 - [FAISS Documentation](https://faiss.ai/)
 - [Transformers Library](https://huggingface.co/docs/transformers/)
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -421,11 +421,11 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support
+## Support
 
 For issues and questions:
 1. Check the troubleshooting section
